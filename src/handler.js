@@ -1,4 +1,4 @@
-const nanoid = require('nanoid');
+const {nanoid} = require('nanoid');
 const notes = require('./notes.js');
 
 const addNoteHandler = (request, h) => {
@@ -121,7 +121,7 @@ const deleteNoteByIdHandler = (request, h) => {
       return response;
 };
 
-module.exports = {
+module.exports ={
     addNoteHandler,
     getAllNotesHandler,
     getNoteByIdHandler,
